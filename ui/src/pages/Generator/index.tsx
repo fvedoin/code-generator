@@ -11,7 +11,7 @@ export function Generator() {
     Array.from({ length: 10 }, () => Array(10).fill('--')),
   );
   const [generatedCode, setGeneratedCode] = useState<string>('??');
-  const [intervalId, setIntervalId] = useState<number>();
+  const [intervalId, setIntervalId] = useState<NodeJS.Timeout>();
 
   const clearFetcher = useCallback(() => {
     if (!intervalId) return;

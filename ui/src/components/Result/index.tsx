@@ -1,7 +1,7 @@
 import { Container, LiveCircle, LiveContainer, ResultConsole } from './styles';
 
 interface IResultProps {
-  intervalId?: number;
+  intervalId?: NodeJS.Timeout;
   generatedCode: string;
 }
 

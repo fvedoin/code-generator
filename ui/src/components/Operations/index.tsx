@@ -4,7 +4,7 @@ import clockIcon from '../../assets/clock-icon.png';
 
 interface IOperationProps {
   fetchDataFromApi: (weightChar: string) => void;
-  onChangeIntervalId: (intervalId: number) => void;
+  onChangeIntervalId: (intervalId: NodeJS.Timeout) => void;
   onClearFetcher: () => void;
 }
 
